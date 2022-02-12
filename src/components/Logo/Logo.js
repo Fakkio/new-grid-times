@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components/macro';
-import format from 'date-fns/format';
+import React from "react";
+import styled from "styled-components/macro";
+import format from "date-fns/format";
 
 const Logo = (props) => {
   return (
@@ -8,15 +8,15 @@ const Logo = (props) => {
       <Link href="/" {...props}>
         New Grid Times
       </Link>
-      <TodaysDate>
-        {format(new Date(), 'EEEE, MMMM do, yyyy')}
-      </TodaysDate>
+      <TodaysDate>{format(new Date(), "EEEE, MMMM do, yyyy")}</TodaysDate>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Link = styled.a`
