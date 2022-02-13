@@ -52,7 +52,7 @@ const SuperHeader = styled.div`
   background: var(--color-gray-900);
   color: white;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: none;
   }
 `;
@@ -78,14 +78,14 @@ const ActionGroup = styled.div`
 const DesktopActionGroup = styled(ActionGroup)`
   display: none;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: flex;
   }
 `;
 const DesktopUserGroup = styled(ActionGroup)`
   display: none;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     padding-top: 32px;
     display: flex;
     flex-direction: column;
@@ -101,7 +101,7 @@ const MainHeader = styled(MaxWidthWrapper)`
   margin-top: 32px;
   margin-bottom: 48px;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     margin-top: 8px;
     margin-bottom: 64px;
   }
