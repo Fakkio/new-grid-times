@@ -22,6 +22,17 @@ const Link = styled.a`
     border-top: 1px solid ${COLORS.gray[300]};
     margin-top: 16px;
   }
+
+  @media ${QUERIES.tabletOnly} {
+    &:not(:first-child) {
+      padding-top: 0;
+      border-top: none;
+      margin-top: 0;
+      margin-left: 48px;
+    }
+
+    flex: 1;
+  }
 `;
 
 const Wrapper = styled.article`
